@@ -5,13 +5,14 @@ from collections import Counter
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import subprocess
-from pathlib import Path
 from datetime import datetime
 import glob
 
 stopwords = stopwords.words('english')
 custom_stopwords = ['the', r'{[0-9]+:[0-9]+}', r'\d+']
-punctuations = ['(',')',';',':','[',']',',','.','-','&','%']
+punctuations = ['(',')',';',':','[',']',',','.','-','&','%','...','!','$','@','#','£','@','^','&','*', r'[^a-zA-Z\s]']
+
+
 
 # if filename.endswith(".pdf"):
 def writetofile():
